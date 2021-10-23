@@ -1,3 +1,163 @@
 @import "./variables";
 @import "./globals";
 
+#page-wrapper {
+  width: 70%;
+  display: flex;
+}
+
+// card component
+.card-component {
+  max-height: 1000px;
+  padding: 3.5rem 6rem 3rem 3.5rem;
+  overflow: hidden;
+
+  * {
+    margin-bottom: 1.2rem;
+  }
+
+  .card-title {
+    text-transform: uppercase;
+    color: $very-light-gray;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .card-description {
+    margin-bottom: 6rem;
+  }
+}
+
+// button
+button,
+.btn {
+  background-color: $very-light-gray;
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid $very-light-gray;
+  transition: all 300ms ease-out;
+}
+
+// card component columns
+#card-component-1 {
+  background-color: $bright-orange;
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+
+  .btn {
+    color: $bright-orange;
+
+    &:hover,
+    &:focus {
+      background-color: $bright-orange;
+      color: $very-light-gray;
+    }
+  }
+}
+
+#card-component-2 {
+  background-color: $dark-cyan;
+  border-radius: 0;
+
+  .btn {
+    color: $dark-cyan;
+
+    &:hover,
+    &:focus {
+      background-color: $dark-cyan;
+      color: $very-light-gray;
+    }
+  }
+}
+
+#card-component-3 {
+  background-color: $very-dark-cyan;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+
+  .btn {
+    color: $very-dark-cyan;
+
+    &:hover,
+    &:focus {
+      background-color: $very-dark-cyan;
+      color: $very-light-gray;
+    }
+  }
+}
+
+// attribution
+#attribution {
+  position: absolute;
+  bottom: 5%;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #000;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+// media queries
+@media (max-width: 1200px) {
+  #page-wrapper {
+    width: 80%;
+  }
+
+  .card-component {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 914px) {
+  #page-wrapper {
+    width: 95%;
+  }
+  .card-component {
+    padding: 1.5rem;
+
+    * {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  body {
+    height: 135vh;
+  }
+
+  #attribution {
+    position: absolute;
+    bottom: -40%;
+  }
+
+  #page-wrapper {
+    flex-direction: column;
+  }
+
+  .card-component .card-description {
+    margin-bottom: 3rem;
+  }
+
+  #card-component-1 {
+    border-radius: 0;
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+  }
+
+  #card-component-3 {
+    border-radius: 0;
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+  }
+}

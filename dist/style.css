@@ -1,0 +1,200 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 2;
+  background-color: #f2f2f2;
+  color: rgba(255, 255, 255, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#page-wrapper {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-component {
+  max-height: 1000px;
+  padding: 3.5rem 6rem 3rem 3.5rem;
+  overflow: hidden;
+}
+
+.card-component * {
+  margin-bottom: 1.2rem;
+}
+
+.card-component .card-title {
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.card-component .card-description {
+  margin-bottom: 6rem;
+}
+
+button,
+.btn {
+  background-color: #f2f2f2;
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid #f2f2f2;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+#card-component-1 {
+  background-color: #e38826;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#card-component-1 .btn {
+  color: #e38826;
+}
+
+#card-component-1 .btn:hover, #card-component-1 .btn:focus {
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+
+#card-component-2 {
+  background-color: #006970;
+  border-radius: 0;
+}
+
+#card-component-2 .btn {
+  color: #006970;
+}
+
+#card-component-2 .btn:hover, #card-component-2 .btn:focus {
+  background-color: #006970;
+  color: #f2f2f2;
+}
+
+#card-component-3 {
+  background-color: #004241;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#card-component-3 .btn {
+  color: #004241;
+}
+
+#card-component-3 .btn:hover, #card-component-3 .btn:focus {
+  background-color: #004241;
+  color: #f2f2f2;
+}
+
+#attribution {
+  position: absolute;
+  bottom: 5%;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #000;
+}
+
+#attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 1200px) {
+  #page-wrapper {
+    width: 80%;
+  }
+  .card-component {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 914px) {
+  #page-wrapper {
+    width: 95%;
+  }
+  .card-component {
+    padding: 1.5rem;
+  }
+  .card-component * {
+    margin-bottom: 0.7rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  body {
+    height: 135vh;
+  }
+  #attribution {
+    position: absolute;
+    bottom: -40%;
+  }
+  #page-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-component .card-description {
+    margin-bottom: 3rem;
+  }
+  #card-component-1 {
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  #card-component-3 {
+    border-radius: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
