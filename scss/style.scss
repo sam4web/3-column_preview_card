@@ -2,8 +2,10 @@
 @import "./globals";
 
 #page-wrapper {
-  width: 70%;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
+  padding: 0 1rem;
 }
 
 // card component
@@ -104,19 +106,12 @@ button,
 
 // media queries
 @media (max-width: 1200px) {
-  #page-wrapper {
-    width: 80%;
-  }
-
   .card-component {
     padding: 2rem;
   }
 }
 
 @media (max-width: 914px) {
-  #page-wrapper {
-    width: 95%;
-  }
   .card-component {
     padding: 1.5rem;
 
